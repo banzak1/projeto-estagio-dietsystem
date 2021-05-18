@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Montserrat:wght@300&family=Montserrat:wght@100&family=Poppins:wght@500&family=Poppins:wght@300&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +7,16 @@
   box-sizing: border-box;
 }
 
+html{
+  height: 100%;
+  width: 100%;
+}
+
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
 }
 
 main {
@@ -17,6 +27,7 @@ section {
   margin-top: 10px;
   padding: 8px 0 16px;
   width: 100%;
+  height: auto;
   display: grid;
   grid-template-columns: 2fr 1fr;
 
@@ -47,6 +58,8 @@ section {
 legend {
   grid-row: 1/2;
 }
+
+/* Posiocionamento dos campos de informações */
 
 label[for="nome"] {
   grid-row: 2/3;
@@ -115,6 +128,8 @@ label[for="categoria"] {
   grid-column: 1/5;
 }
 
+/* Estilização dos campos */
+
 #titulo {
   font-size: 16px;
   font-weight: 400;
@@ -122,33 +137,33 @@ label[for="categoria"] {
   padding: 14px 0 12px;
 }
 
-#peso, #unidPeso {
-  column-gap: 2rem;
-}
-
 label {
   display: block;
+  font-family: 'Montserrat';
   font-size: 14px;
-  font-weight: 100;
+  font-weight: 300;
 
   padding-top: 10px;
   padding-bottom: 4px;
 }
 
-input, .input{
+.inputText{
   width: 100%;
   height: 28px;
-  background: #F4F4F6;
+  background: #f4f5f7;
+  font-family: 'Poppins';
+  font-weight: 300;
 }
 
 
-.envio {
+.image_file_recipe {
   grid-column-start: 2;
   grid-column-end: 3;
-  margin: auto auto;
+  margin: auto auto;  
+
 }
 
-.envio img  {
+.envio {
   display: flex;
   
   margin: auto;
@@ -164,3 +179,16 @@ input, .input{
  
 }
 
+
+
+
+/*  Área dos ingredientes e valores nutricionais*/
+
+.info .ingredients_table{
+  width: 100%;
+  height: auto;
+  margin-top: 32px;
+  padding: 12px 8px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

@@ -18,32 +18,56 @@
       <section id="info">
         <form id="info-basicas-form" class="cards-form">
           <legend>Informação Básica</legend>
+      
+            <label for="nome">Nome</label>
+            <input id="nome" type="text" class="inputText" required />
 
-          <label for="nome">Nome</label>
-          <input id="nome" type="text" required />
+            <label for="descricao">Descrição</label>
+            <input id="descricao" class="inputText" type="textarea" required />
 
-          <label for="descricao">Descrição</label>
-          <input id="descricao" class="input" role="textbox" required />
+            <label for="tempo">Tempo de Preparo</label>
+            <input id="tempo" type="text"class="inputText" required />
 
-          <label for="tempo">Tempo de Preparo</label>
-          <input id="tempo" type="text" required />
+            <label for="peso">Peso total da receita</label>
+            <input id="peso" type="number"class="inputText" required />
+            <input id="unidPeso" type="text"class="inputText" required />
 
-          <label for="peso">Peso total da receita</label>
-          <input id="peso" class="peso-info" type="number" required />
-          <input id="unidPeso" class="peso-info" type="text" required />
+           <label for="numPorcoes">Número de Porções</label>
+           <input id="numPorcoes" type="number" class="inputText" required />
 
-          <label for="numPorcoes">Número de Porções</label>
-          <input id="numPorcoes" type="number" required />
-
-          <label for="categoria">Categoria</label>
-          <input id="categoria" type="text" required />
+           <label for="categoria">Categoria</label>
+            <input id="categoria" type="text" class="inputText" required />
+   
         </form>
 
-        <div class="envio">
-          <img class="envio" src="images/sanduiche.png" alt="sanduiche" />
-          <input id="envio-img" type="file" />
+        <div class="image_file_recipe">
+          <img class="envio" src="images/avatar.svg" alt="sanduiche" />
+          <input id="envio-img" type="file" title=""/>
         </div>
       </section>
+
+      <div class="info">
+        <div class="ingredients_table">
+          <p>Ingredientes</p>
+            <div class="aliment_box_info">
+              <input id="aliment_name" type="text" value="Arroz integral, cozido" disabled />
+              <input id="aliment_weight_text" type="text" value="3 Gramas" disabled />
+              <input id="aliment_weight_number" type="text" value="3g" disabled />
+            </div>
+
+            <div class="aliment_box_nutrients">
+              <p id="aliment_peotein" >33.6 Proteinas (g)</p>
+              <p id="aliment_carbo" >7 Carboidratos (g)</p>
+              <p id="aliment_lipids" >7.7 Lipídeos (g)</p>
+              <p id="aliment_kcal" >238.1 kcal 100%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
     </main>
   </body>
 </html>
