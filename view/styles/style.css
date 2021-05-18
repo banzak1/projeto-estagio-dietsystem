@@ -34,13 +34,14 @@ section {
 
   display: grid;
   grid-auto-rows: 2rem;
-  grid-template-columns: 1fr 0.3fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 0.3fr 1fr 1fr;
 }
 
 .cards-form label, 
 .cards-form input {
   display: block;
-  width: 100%;
+  width: auto;
+  margin-right: 12px;
 }
 
 legend {
@@ -152,5 +153,14 @@ input{
   
   margin: auto;
   width: 30%;
+}
+
+.envio input {
+  display: block;
+  width: auto;
+  padding: 4px;
+
+  margin: 10px auto;
+ 
 }
 
