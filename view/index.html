@@ -15,8 +15,8 @@
   </head>
   <body>
     <main>
-      <section>
-        <form id="info" name="info-basicas" class="cards">
+      <section id="info">
+        <form id="info-basicas" class="cards">
           <fieldset>
             <legend>Informação Básica</legend>
 
@@ -26,15 +26,22 @@
             <label for="descricao">Descrição</label>
             <input id="descricao" class="cards-info" type="text" required />
 
-            <label for="tempo">Tempo de Preparo</label>
-            <input id="tempo" class="cards-info" type="text" required />
+            <div id="separação">
+              <label for="tempo">Tempo de Preparo</label>
+              <input id="tempo" class="cards-info" type="text" required />
 
-            <label for="peso">Peso total da receita</label>
-            <input id="peso" class="cards-info" type="number" required />
-            <input id="unidPeso" class="cards-info" type="text" required />
+              <label for="peso">Peso total da receita</label>
+              <input id="peso" class="cards-info" type="number" required />
+              <input id="unidPeso" class="cards-info" type="text" required />
 
-            <label for="numPorcoes">Número de Porções</label>
-            <input id="numPorcoes" class="cards-info" type="number" required />
+              <label for="numPorcoes">Número de Porções</label>
+              <input
+                id="numPorcoes"
+                class="cards-info"
+                type="number"
+                required
+              />
+            </div>
 
             <label for="categoria">Categoria</label>
             <input id="categoria" class="cards-info" type="text" required />
