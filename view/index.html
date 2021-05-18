@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/style.css" />
 
     <title>Recipes</title>
@@ -11,28 +16,34 @@
   <body>
     <main>
       <section>
-        <form name="info-basicas" class="cards">
-          <legend>Informação Básica</legend>
+        <form id="info" name="info-basicas" class="cards">
+          <fieldset>
+            <legend>Informação Básica</legend>
 
-          <label for="nome">Nome</label>
-          <input id="nome" type="text" required />
+            <label for="nome">Nome</label>
+            <input id="nome" class="cards-info" type="text" required />
 
-          <label for="descricao">Descrição</label>
-          <input id="descricao" type="text" required />
+            <label for="descricao">Descrição</label>
+            <input id="descricao" class="cards-info" type="text" required />
 
-          <label for="tempo">Tempo de Preparo</label>
-          <input id="tempo" type="text" required />
+            <label for="tempo">Tempo de Preparo</label>
+            <input id="tempo" class="cards-info" type="text" required />
 
-          <label for="peso">Peso total da receita</label>
-          <input id="peso" type="text" required />
+            <label for="peso">Peso total da receita</label>
+            <input id="peso" class="cards-info" type="number" required />
+            <input id="unidPeso" class="cards-info" type="text" required />
 
-          <input id="unidPeso" type="text" />
-          <label for="numPorcoes">Número de Porções</label>
-          <input id="numPorcoes" type="text" required />
+            <label for="numPorcoes">Número de Porções</label>
+            <input id="numPorcoes" class="cards-info" type="number" required />
 
-          <label for="categoria">Categoria</label>
-          <input id="categoria" type="text" required />
+            <label for="categoria">Categoria</label>
+            <input id="categoria" class="cards-info" type="text" required />
+          </fieldset>
         </form>
+
+        <div class="envio">
+          <img class="envio" src="images/sanduiche.png" alt="sanduiche" />
+        </div>
       </section>
     </main>
   </body>
