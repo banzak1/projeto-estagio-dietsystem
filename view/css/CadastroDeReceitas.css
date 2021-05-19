@@ -313,7 +313,7 @@ label {
   margin: 0 6px;
 }
 
-.edit-form #edit-confirm img:hover {
-  color: #00fc00;
+.edit-form #edit-confirm:hover {
+  filter: invert(43%) sepia(96%) saturate(1000%) hue-rotate(88deg) brightness(128%) contrast(119%);
 }
 
