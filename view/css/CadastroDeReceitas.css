@@ -292,10 +292,28 @@ label {
   grid-column: 4/5;
 }
 
-.material-icons {
+.edit-form {
   grid-column: 2/3;
   margin-left: auto;
   right: 0;
   cursor: pointer;
+}
+
+.edit-form #edit-change {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin: 0 6px;
+}
+
+.edit-form #edit-confirm {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin: 0 6px;
+}
+
+.edit-form #edit-confirm img:hover {
+  color: #00fc00;
 }
 
