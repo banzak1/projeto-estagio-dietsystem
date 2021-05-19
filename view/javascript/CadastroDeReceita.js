@@ -1,3 +1,5 @@
+/*  Função para ativar ou desativar a edição no card de nutrientes */
+
 const editForm = document.getElementById('edit-change')
 const saveEdit = document.getElementById('edit-confirm')
 
@@ -14,4 +16,5 @@ saveEdit.addEventListener("click", function(){
                         inputs[i].disabled = true;
                 }
 })
+
 
