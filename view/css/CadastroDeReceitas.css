@@ -148,7 +148,7 @@ label {
   padding-bottom: 4px;
 }
 
-.inputText{
+.inputText, .inputText_nutrient{
   width: 100%;
   height: 28px;
   background: #f4f5f7;
@@ -186,26 +186,26 @@ label {
 
 /*  Área dos ingredientes e valores nutricionais*/
 
-.info .ingredients_table{
+.info .cards-section{
   display: grid;
   grid-template-columns: 1.2fr 1fr;
 
   width: 100%;
   height: auto;
-  margin-top: 32px;
+  margin: 32px 0;
   padding: 12px 8px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.info .ingredients_table .cards_tables {
+.info .cards-section .cards_tables {
   grid-column: 1/2;
   display: flex;
   flex-direction: column;
   padding: 12px 10px;
 }
 
-.info .ingredients_table .aliment_box_info {
+.info .cards-section .aliment_box_info {
   display: grid;
   grid-template-columns: 4fr 3fr 1fr;
   grid-template-rows: auto;
@@ -214,7 +214,7 @@ label {
   
 }
 
-.info .ingredients_table .aliment_box_info .inputText {
+.info .cards-section .aliment_box_info .inputText_nutrient {
   margin-bottom: 5px;
   padding: 5px;
   font-size: 12px;
@@ -230,14 +230,14 @@ label {
   text-align: center;
 }
 
-.info .ingredients_table .aliment_box_nutrients {
+.info .cards-section .aliment_box_nutrients {
   grid-column: 2/3;
   display: flex;
   flex-direction: column;
   margin: auto auto;
 }
 
-.info .ingredients_table .aliment_box_nutrients .nutrients_values {
+.info .cards-section .aliment_box_nutrients .nutrients_values {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 100%;
@@ -265,7 +265,7 @@ label {
 }
 
 
-.info .ingredients_table .aliment_box_nutrients .nutrients_class {
+.info .cards-section .aliment_box_nutrients .nutrients_class {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 100%;
@@ -315,4 +315,7 @@ label {
 .edit-form #edit-confirm:hover {
   filter: invert(43%) sepia(96%) saturate(1000%) hue-rotate(88deg) brightness(128%) contrast(119%);
 }
+
+
+/* Área do Modo de Preparo */
 
