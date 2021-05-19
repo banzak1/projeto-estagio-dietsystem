@@ -19,11 +19,15 @@ saveEdit.addEventListener("click", function(){
 
 
 /*  Função para criar ou excluir novos modos de preparo */
+
 $('#prepare_mode_text').on('click', function() {
-$('#line_1').clone().appendTo('.prepare_section');
+        $('#line_1').clone().appendTo('.prepare_section');
 });
 
 
-$('#delete_prepare_mode').on('click', function(){
-$(this).closest(".prepare_mode").remove();
+
+$(document).on('click', '#delete_prepare_mode', function(){
+        $(this).closest(".prepare_mode").remove();
 });
+
+
