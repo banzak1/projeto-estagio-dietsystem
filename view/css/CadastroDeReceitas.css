@@ -268,7 +268,6 @@ label {
 .info .ingredients_table .aliment_box_nutrients .nutrients_class {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 20px;
   width: 100%;
   padding: 4px 10px;
   text-align: center;
