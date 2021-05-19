@@ -292,5 +292,10 @@ label {
   grid-column: 4/5;
 }
 
-
+.material-icons {
+  grid-column: 2/3;
+  margin-left: auto;
+  right: 0;
+  cursor: pointer;
+}
 
