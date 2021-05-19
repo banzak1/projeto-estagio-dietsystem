@@ -55,7 +55,7 @@ section {
   margin-right: 12px;
 }
 
-legend {
+.cards-form p {
   grid-row: 1/2;
 }
 
@@ -130,11 +130,10 @@ label[for="categoria"] {
 
 /* Estilização dos campos */
 
-#titulo {
+.titulo {
   font-size: 16px;
   font-weight: 400;
-
-  padding: 14px 0 12px;
+  padding: 4px 0 12px;
 }
 
 label {
