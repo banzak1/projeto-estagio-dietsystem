@@ -196,10 +196,12 @@ label {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.info .ingredients_table .aliments_box_info {
+.info .ingredients_table .cards_tables {
   grid-column: 1/2;
   display: flex;
+  flex-direction: column;
 }
+
 
 .info .ingredients_table .aliment_box_nutrients {
   grid-column: 2/3;
