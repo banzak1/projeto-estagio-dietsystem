@@ -59,7 +59,7 @@ section {
   grid-row: 1/2;
 }
 
-/* Posiocionamento dos campos de informações */
+/* Posicionamento dos campos de informações */
 
 label[for="nome"] {
   grid-row: 2/3;
@@ -132,9 +132,9 @@ label[for="categoria"] {
 
 .titulo {
   display: flex;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
-  padding: 12px 0 12px;
+  padding: 12px 10px 12px;
   align-items: center;
 }
 
@@ -202,6 +202,7 @@ label {
   grid-column: 1/2;
   display: flex;
   flex-direction: column;
+  padding: 12px 10px;
 }
 
 .info .ingredients_table .aliment_box_info {
@@ -210,10 +211,23 @@ label {
   grid-template-rows: auto;
   column-gap: 6px;
   
+  
 }
 
 .info .ingredients_table .aliment_box_info .inputText {
   margin-bottom: 5px;
+  padding: 5px;
+  font-size: 12px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+}
+
+#aliment_weight_text {
+  padding-left: 16px;
+}
+
+#aliment_weight_number {
+  text-align: center;
 }
 
 .info .ingredients_table .aliment_box_nutrients {
