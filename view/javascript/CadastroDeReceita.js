@@ -46,3 +46,19 @@ function reset_values() {
           count++; 
         })  
 }
+
+
+/* Função para trocar entre as tabelas micronutrientes e macronutrients */
+
+$('.macronutrients_card').hide();
+
+$('.micronutrients_card').on('click', '#change_table', function() {
+        $('.micronutrients_card').hide();
+        $('.macronutrients_card').show();
+});
+
+
+$('.macronutrients_card').on('click', '#change_table', function() {
+        $('.macronutrients_card').hide();
+        $('.micronutrients_card').show();
+});

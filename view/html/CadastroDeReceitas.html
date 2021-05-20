@@ -131,17 +131,17 @@
         </div>
         <div class="number_of_portion_section">
           <span id="number_of_portion_title" class="inputTitle">Número de porções</span>
-          <input id="number_of_portion_input" type="text" class="inputText_portion"/>
+          <input id="number_of_portion_input" type="number" class="inputText_portion"/>
         </div>
         <div class="weight_for_portion_section">
           <span id="weight_for_portion_title" class="inputTitle">Peso de cada porção</span>
-          <input id="weight_for_portion_input" type="text" class="inputText_portion"/>
+          <input id="weight_for_portion_input" type="number" class="inputText_portion"/>
         </div>
       </div>
 
-      <div class="micronutrients_card" >
+      <div class="micronutrients_card" hidden>
         <div class="title_info">
-          <span class="material-icons">sync_alt</span>
+          <span id="change_table" class="material-icons">sync_alt</span>
           <span id="name_of_card_micro">Micronutrientes por <span id="name_singular_or_plural"></span></span>
         </div>
         <input type="text" id="name_and_value_micronutrients_1" class="inputText_portion">
@@ -159,15 +159,15 @@
       </div>
 
 
-      <div class="macronutrients_card" hidden>
+      <div class="macronutrients_card" >
         <div class="title_info">
-          <span class="material-icons">sync_alt</span>
+          <span id="change_table" class="material-icons">sync_alt</span>
           <span id="name_of_card_macro">Macronutrientes por <span id="name_singular_or_plural"></span></span>
         </div>
-        <input type="text" id="name_and_value_macronutrients_1">
-        <input type="text" id="name_and_value_macronutrients_2">
-        <input type="text" id="name_and_value_macronutrients_3">
-        <input type="text" id="name_and_value_macronutrients_4">
+        <input type="text" id="name_and_value_macronutrients_1" class="inputText_portion">
+        <input type="text" id="name_and_value_macronutrients_2" class="inputText_portion">
+        <input type="text" id="name_and_value_macronutrients_3" class="inputText_portion">
+        <input type="text" id="name_and_value_macronutrients_4" class="inputText_portion">
       </div>
     </div>
   </main>
