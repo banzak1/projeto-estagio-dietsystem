@@ -370,3 +370,17 @@ label {
   cursor: pointer;
 }
 
+
+/*  Área de Porção e medidas*/
+
+.portion_and_measure_card {
+    width: 45%;
+    height: 100%;
+    margin: 32px 0;
+    padding: 12px 8px 16px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+
