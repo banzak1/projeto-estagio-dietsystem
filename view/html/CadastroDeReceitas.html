@@ -117,56 +117,58 @@
       </div>
     </div>
 
-    <div class="portion_and_measure_card">
-      <span id="name_of_card_portion">Porção e medidas caseiras</span>
+    <div class="portion-macro-micro_cards">
+      <div class="portion_and_measure_card">
+        <span id="name_of_card_portion">Porção e medidas caseiras</span>
 
-      <div class="name_section">
-        <span id="name_of_portion_title" class="inputTitle">Nome da porção</span>
-        <input id="name_of_portion_input" type="text" />
+        <div class="name_section">
+          <span id="name_of_portion_title" class="inputTitle">Nome da porção</span>
+          <input id="name_of_portion_input" type="text" class="inputText_portion"/>
+        </div>
+        <div class="name_plural_section">
+          <span id="name_portion_plural_title" class="inputTitle">Nome da porção no plural</span>
+          <input id="name_portion_plural_input" type="text" class="inputText_portion"/>
+        </div>
+        <div class="number_of_portion_section">
+          <span id="number_of_portion_title" class="inputTitle">Número de porções</span>
+          <input id="number_of_portion_input" type="text" class="inputText_portion"/>
+        </div>
+        <div class="weight_for_portion_section">
+          <span id="weight_for_portion_title" class="inputTitle">Peso de cada porção</span>
+          <input id="weight_for_portion_input" type="text" class="inputText_portion"/>
+        </div>
       </div>
-      <div class="name_plural_section">
-        <span id="name_portion_plural_title" class="inputTitle">Nome da porção no plural</span>
-        <input id="name_portion_plural_input" type="text" />
-      </div>
-      <div class="number_of_portion_section">
-        <span id="number_of_portion_title" class="inputTitle">Número de porções</span>
-        <input id="number_of_portion_input" type="text" />
-      </div>
-      <div class="weight_for_portion_section">
-        <span id="weight_for_portion_title" class="inputTitle">Peso de cada porção</span>
-        <input id="weight_for_portion_input" type="text" />
-      </div>
-    </div>
 
-    <div class="micronutrients_card">
-      <div class="title_info">
-        <span class="material-icons">sync_alt</span>
-        <span id="name_of_card_micro">Micronutrientes por <span id="name_singular_or_plural"></span></span>
+      <div class="micronutrients_card" >
+        <div class="title_info">
+          <span class="material-icons">sync_alt</span>
+          <span id="name_of_card_micro">Micronutrientes por <span id="name_singular_or_plural"></span></span>
+        </div>
+        <input type="text" id="name_and_value_micronutrients_1">
+        <input type="text" id="name_and_value_micronutrients_2">
+        <input type="text" id="name_and_value_micronutrients_3">
+        <input type="text" id="name_and_value_micronutrients_4">
+        <input type="text" id="name_and_value_micronutrients_5">
+        <input type="text" id="name_and_value_micronutrients_6">
+        <input type="text" id="name_and_value_micronutrients_7">
+        <input type="text" id="name_and_value_micronutrients_8">
+        <input type="text" id="name_and_value_micronutrients_9">
+        <input type="text" id="name_and_value_micronutrients_10">
+        <input type="text" id="name_and_value_micronutrients_11">
+        <input type="text" id="name_and_value_micronutrients_12">
       </div>
-      <input type="text" id="name_and_value_micronutrients_1">
-      <input type="text" id="name_and_value_micronutrients_2">
-      <input type="text" id="name_and_value_micronutrients_3">
-      <input type="text" id="name_and_value_micronutrients_4">
-      <input type="text" id="name_and_value_micronutrients_5">
-      <input type="text" id="name_and_value_micronutrients_6">
-      <input type="text" id="name_and_value_micronutrients_7">
-      <input type="text" id="name_and_value_micronutrients_8">
-      <input type="text" id="name_and_value_micronutrients_9">
-      <input type="text" id="name_and_value_micronutrients_10">
-      <input type="text" id="name_and_value_micronutrients_11">
-      <input type="text" id="name_and_value_micronutrients_12">
-    </div>
 
 
-    <div class="macronutrients_card">
-      <div class="title_info">
-        <span class="material-icons">sync_alt</span>
-        <span id="name_of_card_macro">Macronutrientes por <span id="name_singular_or_plural"></span></span>
+      <div class="macronutrients_card" hidden>
+        <div class="title_info">
+          <span class="material-icons">sync_alt</span>
+          <span id="name_of_card_macro">Macronutrientes por <span id="name_singular_or_plural"></span></span>
+        </div>
+        <input type="text" id="name_and_value_macronutrients_1">
+        <input type="text" id="name_and_value_macronutrients_2">
+        <input type="text" id="name_and_value_macronutrients_3">
+        <input type="text" id="name_and_value_macronutrients_4">
       </div>
-      <input type="text" id="name_and_value_macronutrients_1">
-      <input type="text" id="name_and_value_macronutrients_2">
-      <input type="text" id="name_and_value_macronutrients_3">
-      <input type="text" id="name_and_value_macronutrients_4">
     </div>
   </main>
   <script src="../javascript/CadastroDeReceita.js"></script>
