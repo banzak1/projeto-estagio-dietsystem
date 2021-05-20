@@ -149,7 +149,7 @@ label {
   padding-bottom: 4px;
 }
 
-.inputText, .inputText_nutrient{
+.inputText, .inputText_nutrient, .inputText_mode{
   width: 100%;
   height: 36px;
   background: #eff0f2;
