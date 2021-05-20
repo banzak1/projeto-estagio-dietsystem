@@ -33,18 +33,15 @@ $(document).on('click', '#delete_prepare_mode', function() {
         reset_values();
 })
 
+/*  Função para reorganizar os novos modos de preparo deletados */
+
 function reset_values() {
         var count = 1;
         var del_icon = "delete";
-        //loop through all divs
         $(".prepare_section > .prepare_mode ").each(function() {
-          $(this).find("span").text(count); //set new count to span
-          $(this).find("input").val(); //set value
-          $(this).find("span#delete_prepare_mode").text(del_icon); //set id
-          count++; //increment count
-        })
-      
-      
+          $(this).find("span").text(count); 
+          $(this).find("input").val();
+          $(this).find("span#delete_prepare_mode").text(del_icon);
+          count++; 
+        })  
 }
-
-
