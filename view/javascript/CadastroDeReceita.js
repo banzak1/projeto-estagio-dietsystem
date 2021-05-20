@@ -21,7 +21,8 @@ saveEdit.addEventListener("click", function(){
 /*  Função para criar ou excluir novos modos de preparo */
 
 var counter = 2;
-        $("#test").on('click', function() {
+
+$(document).on('click', '.prepare_mode :input', function() {
         $('<div id="test" class="prepare_mode"><span id="prepare_mode_number">'+counter+'</span> <input id="prepare_mode_text" type="text" class="inputText_mode" /><span id="delete_prepare_mode" class="material-icons">delete</span></div>').appendTo('.prepare_section');
         counter++;
 });
