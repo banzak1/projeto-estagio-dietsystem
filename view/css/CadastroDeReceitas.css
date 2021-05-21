@@ -23,110 +23,19 @@ main {
   margin: 12px 16px;
 }
 
-section {
-  margin-top: 10px;
-  padding: 8px 0 16px;
-  width: 100%;
-  height: auto;
+.info_basic {
   display: grid;
   grid-template-columns: 1.4fr 1fr;
 
-  background: #ffffff;
-
+  width: 100%;
+  margin: 32px 0;
+  padding: 12px 8px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.cards-form {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  
-  margin-left: 10px;
-
-  display: grid;
-  grid-auto-rows: 2rem;
-  grid-template-columns: 1fr 0.3fr 1fr 1fr;
-}
-
-.cards-form label, 
-.cards-form input {
-  display: block;
-  width: auto;
-  margin-right: 12px;
-}
-
-.cards-form p {
-  grid-row: 1/2;
-}
-
 /* Posicionamento dos campos de informações */
 
-label[for="nome"] {
-  grid-row: 2/3;
-}
-
-#nome {
-  grid-row: 3/4;
-  grid-column: 1/5;
-}
-
-label[for="descricao"] {
-  grid-row: 4/5;
-}
-
-#descricao {
-  grid-row: 5/6;
-  grid-column: 1/5;
-}
-
-label[for="tempo"] {
-  grid-row: 6/7;
-  grid-column: 1/2;
-}
-
-#tempo {
-  grid-row: 7/8;
-  grid-column: 1/2;
-  width: 70%;
-}
-
-label[for="peso"] {
-  grid-row: 6/7;
-  grid-column: 2/4;
-}
-
-#peso {
-  grid-row: 7/8;
-  grid-column: 2/3;
-  width: 95%;
-}
-
-#unidPeso {
-  grid-row: 7/8;
-  grid-column: 3/4;
-  width: 50%;
-}
-
-
-label[for="numPorcoes"] {
-  grid-row: 6/7;
-  grid-column: 4/5;
-}
-
-#numPorcoes {
-  grid-row: 7/8;
-  grid-column: 4/5;
-}
-
-label[for="categoria"] {
-  grid-row: 8/9;
-  grid-column: 1/2;
-}
-
-#categoria {
-  grid-row: 9/10;
-  grid-column: 1/5;
-}
 
 /* Estilização dos campos */
 
@@ -182,9 +91,8 @@ label, .inputTitle {
 }
 
 
-
-
 /*  Área dos ingredientes e valores nutricionais*/
+
 
 .info .cards-section{
   display: grid;
