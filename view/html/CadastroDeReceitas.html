@@ -60,8 +60,8 @@
       </div>
 
       <div class="image_file_recipe">
-        <img class="img_file" src="../images/avatar.svg" alt="avatar" />
-        <input id="envio_img_input" type="file" title="" />
+        <img id="output" class="img_file" src="../images/avatar.svg" alt="avatar" />
+        <input id="envio_img_input" type="file" title="" accept="image/*" onchange="document.getElementById('output').src = window.URL.createObjectURL(this.files[0])"/>
       </div>
     </div>
 

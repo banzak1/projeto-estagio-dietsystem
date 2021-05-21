@@ -135,11 +135,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
-.image_file_recipe img {
+.img_file {
   border-radius: 50%;
-  width: 30%;
+  object-fit: cover;
+  height: 150px;
+  width: 150px;
 }
 
 .envio_img_input {
