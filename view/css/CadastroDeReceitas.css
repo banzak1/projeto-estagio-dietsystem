@@ -113,14 +113,18 @@ body {
   text-align: center;
 }
 
-.inputText, .inputText_nutrient, .inputText_mode, .inputText_portion {
+.inputText, 
+.inputText_nutrient, 
+.inputText_mode, 
+.inputText_portion, 
+#descricao {
   width: 100%;
   height: 36px;
   background: #eff0f2;
   font-family: 'Montserrat';
   font-size: 13px;
   font-weight: 400;
-
+  padding: 5px;
 }
 
 
@@ -453,6 +457,10 @@ body {
 #name_singular_or_plural_micro,
 #name_singular_or_plural_macro {
   margin: 0;
+}
+
+#descricao {
+  word-break: break-word;
 }
 
 @media only screen and (min-device-width : 0px) and (max-device-width : 1024px) {
