@@ -110,6 +110,7 @@ body {
 
 #weight_info_section #unidWeight{
   width: 70%;
+  text-align: center;
 }
 
 .inputText, .inputText_nutrient, .inputText_mode, .inputText_portion {
@@ -160,7 +161,6 @@ body {
 .info .cards-section{
   display: grid;
   grid-template-columns: 1.4fr 1fr;
-
   width: 100%;
   margin: 12px 0;
   padding: 12px 8px;
@@ -455,8 +455,74 @@ body {
   margin: 0;
 }
 
-@media screen {
-  
+@media only screen and (min-device-width : 0px) and (max-device-width : 1024px) {
+
+
+  /* Aplicando estilização para melhor responsividade*/
+
+  /*Card de Informações básicas*/
+
+  .info_basic {
+    display: flex;
+    flex-direction: column;
+  }
+  #info_basic_form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image_file_recipe {
+    margin: 24px;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*Card de Nutricional*/
+
+  .info .cards-section{
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+  }
+
+  .info .cards-section .cards_tables {
+    padding: 12px 10px;
+  }
+
+  .info .cards-section .aliment_box_info {
+    display: grid;
+    grid-template-columns: 4fr 3fr 1fr;
+    grid-template-rows: auto;
+    
+  }
+
+
+  .info .cards-section .aliment_box_nutrients {
+    margin: 12px;
+    
+  }
+
+
+  .portion-macro-micro_cards{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portion-macro-micro_cards .title{
+    grid-column: 1/3;
+  }
+
+  .portion_and_measure_card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .micronutrients_card,
+  .macronutrients_card {
+    row-gap: 12px;
+  }
 }
 
 
