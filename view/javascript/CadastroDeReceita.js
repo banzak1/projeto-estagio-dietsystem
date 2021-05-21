@@ -28,16 +28,21 @@ function auto_height(elem) {  /* javascript */
 var counter = 2;
 
 $(document).on('click', '.prepare_mode :input', function() {
-        $('<div id="test" class="prepare_mode"><span id="prepare_mode_number">'+counter+'</span> <input id="prepare_mode_text" type="text" class="inputText_mode" /><span id="delete_prepare_mode" class="material-icons">delete</span></div>').appendTo('.prepare_section');
-        counter++;
+        if($("id:first").val() > 1) {
+                $('<div id="test" class="prepare_mode"><span id="prepare_mode_number">'+counter+'</span> <input id="'+counter+'" type="text" class="inputText_mode" /><span id="delete_prepare_mode" class="material-icons">delete</span></div>').appendTo('.prepare_section');
+                counter++;
+        };
+
 });
 
+if (counter.val() > '2') {
+        $(document).on('click', '#delete_prepare_mode', function() {
+                $(this).closest('.prepare_mode').remove();
+                counter--;
+                reset_values();
+        });
+};
 
-$(document).on('click', '#delete_prepare_mode', function() {
-        $(this).closest('.prepare_mode').remove();
-        counter--;
-        reset_values();
-})
 
 /*  Função para reorganizar os novos modos de preparo deletados */
 
