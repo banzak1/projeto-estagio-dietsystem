@@ -44,8 +44,8 @@ function reset_values() {
           $(this).find("input").val();
           $(this).find("span#delete_prepare_mode").text(del_icon);
           count++; 
-        })  
-}
+        });  
+};
 
 
 /* Função para trocar entre as tabelas micronutrientes e macronutrients */
@@ -80,9 +80,15 @@ $('.portion_and_measure_card').change(function() {
 });
 
 $('.portion_and_measure_card').change(function(){
-        var portionValue = $('#number_of_portion_input').val();
-        if(portionValue == 1 ){
-                var portionText = $('#name_portion_input').val();
-                $('#name_singular_or_plural').text(portionText);
+        if($('#number_of_portion_input').val() === '1' ){
+
+                $('#name_singular_or_plural_micro').text($('#name_portion_input').val());
+                $('#name_singular_or_plural_macro').text($('#name_portion_input').val());
+        };
+
+        if($('#number_of_portion_input').val() > '1' ){
+                $('#name_singular_or_plural_micro').text($('#name_portion_plural_input').val());
+                $('#name_singular_or_plural_macro').text($('#name_portion_plural_input').val());
+
         };
 });
