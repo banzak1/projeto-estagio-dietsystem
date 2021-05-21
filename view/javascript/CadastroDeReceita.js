@@ -81,14 +81,13 @@ $('.portion_and_measure_card').change(function() {
 
 $('.portion_and_measure_card').change(function(){
         if($('#number_of_portion_input').val() === '1' ){
-
-                $('#name_singular_or_plural_micro').text($('#name_portion_input').val());
-                $('#name_singular_or_plural_macro').text($('#name_portion_input').val());
+                $('#name_singular_or_plural_micro').text($('#number_of_portion_input').val() + ' ' + $('#name_portion_input').val());
+                $('#name_singular_or_plural_macro').text($('#number_of_portion_input').val() + ' ' + $('#name_portion_input').val());
         };
 
         if($('#number_of_portion_input').val() > '1' ){
-                $('#name_singular_or_plural_micro').text($('#name_portion_plural_input').val());
-                $('#name_singular_or_plural_macro').text($('#name_portion_plural_input').val());
+                $('#name_singular_or_plural_micro').text($('#number_of_portion_input').val() + ' ' + $('#name_portion_plural_input').val());
+                $('#name_singular_or_plural_macro').text($('#number_of_portion_input').val() + ' ' + $('#name_portion_plural_input').val());
 
         };
 });

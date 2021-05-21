@@ -450,6 +450,13 @@ body {
   cursor: pointer;
 }
 
+#name_singular_or_plural_micro,
+#name_singular_or_plural_macro {
+  margin: 0;
+}
 
+@media screen {
+  
+}
 
 
