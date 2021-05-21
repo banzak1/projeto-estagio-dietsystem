@@ -62,3 +62,27 @@ $('.macronutrients_card').on('click', '#change_table', function() {
         $('.macronutrients_card').hide();
         $('.micronutrients_card').show();
 });
+
+/** Função para passar os valores digitados no input do cartão de informações */
+
+$('#numPortion').change(function() {
+        $('#number_of_portion_input').val($(this).val());
+});
+
+
+$('.portion_and_measure_card').change(function() {
+        var weightValue = $('#weight').val();
+        var portionValue = $('#number_of_portion_input').val();
+        var weightForPortion = weightValue / portionValue;
+
+        $('#weight_for_portion_input').val(weightForPortion);
+        $('#numPortion').val(portionValue);
+});
+
+$('.portion_and_measure_card').change(function(){
+        var portionValue = $('#number_of_portion_input').val();
+        if(portionValue == 1 ){
+                var portionText = $('#name_portion_input').val();
+                $('#name_singular_or_plural').text(portionText);
+        };
+});
