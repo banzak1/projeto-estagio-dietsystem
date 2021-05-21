@@ -498,12 +498,13 @@ body {
     
   }
 
-
   .info .cards-section .aliment_box_nutrients {
     margin: 12px;
     
   }
 
+
+    /*Card de Porções e medidas*/
 
   .portion-macro-micro_cards{
     display: flex;
