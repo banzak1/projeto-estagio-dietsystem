@@ -17,9 +17,6 @@ body {
   background-color: white;
   align-items: center;
   justify-content: center;
-}
-
-main {
   margin: 12px 16px;
 }
 
@@ -28,7 +25,7 @@ main {
   grid-template-columns: 1.4fr 1fr;
 
   width: 100%;
-  margin: 32px 0;
+  margin: 12px 0;
   padding: 12px 8px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -36,10 +33,54 @@ main {
 
 /* Posicionamento dos campos de informações */
 
+#info_basic_form {
+  grid-column: 1/2;
+  display: grid;
+  column-gap: 10px;
+}
+
+#info_basic_form .title{
+  grid-row: 1/2;
+  grid-column: 1/4;
+}
+
+.name_info_section {
+  grid-row: 2/3;
+  grid-column: 1/4;
+}
+
+.description_info_section {
+  grid-row: 3/4;
+  grid-column: 1/4;
+}
+
+.time_info_section, 
+.weight_info_section, 
+.numPortion_info_section {
+  grid-row: 4/5;
+}
+
+.time_info_section {
+  grid-column: 1/2;
+}
+
+.weight_info_section {
+  grid-column: 2/3;
+
+}
+
+.numPortion_info_section {
+  grid-column: 3/4;
+}
+
+.category_info_section {
+  grid-row: 5/6;
+  grid-column: 1/4;
+}
 
 /* Estilização dos campos */
 
-.titulo, #name_of_card_portion, .title_info {
+.title, #name_of_card_portion, .title_info {
   display: flex;
   font-family: 'Montserrat';
   font-size: 18px;
@@ -48,12 +89,27 @@ main {
   padding: 12px 10px 12px 0;
 }
 
-label, .inputTitle {
+.inputTitle {
   display: flex;
   font-family: 'Montserrat';
   font-size: 16px;
   font-weight: 300;
   padding: 12px 10px 12px 0;
+}
+
+#weight_info_section {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
+  width: 100%;
+}
+
+#weight_info_section #weight{
+  width: 30%;
+}
+
+#weight_info_section #unidWeight{
+  width: 70%;
 }
 
 .inputText, .inputText_nutrient, .inputText_mode, .inputText_portion {
@@ -68,8 +124,7 @@ label, .inputTitle {
 
 
 .image_file_recipe {
-  grid-column-start: 2;
-  grid-column-end: 3;
+grid-column: 2/3;
   margin: auto auto;  
 
 }
