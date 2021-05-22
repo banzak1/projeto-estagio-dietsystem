@@ -97,6 +97,12 @@ body {
   padding: 12px 10px 12px 0;
 }
 
+.time:after {
+  right: 0;
+  top: 0;
+  content: '@gmail.com';
+}
+
 #weight_info_section {
   display: flex;
   flex-direction: row;
@@ -127,6 +133,10 @@ body {
   padding: 5px;
 }
 
+#descricao {
+  overflow: hidden;
+  resize: none;
+}
 
 .image_file_recipe {
   grid-column: 2/3;
@@ -306,8 +316,21 @@ body {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.title_section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
 .prepare_section .titulo {
   grid-row: 1/2;
+}
+
+#add_new_input {
+  cursor: pointer;
+  align-self: center;
+  padding: 4px 10px;
+  font-size: 32px;
 }
 
 .prepare_section .prepare_mode {
@@ -315,7 +338,7 @@ body {
   grid-template-columns: .05fr 1fr .05fr;
   column-gap: 2px;
   height: 36px;
-  margin-bottom: 4px;
+  margin: 4px;
   
 }
 

@@ -39,7 +39,7 @@
         </div>
         <div class="time_info_section">
           <span class="inputTitle">Tempo de Preparo</span>
-          <input id="time" type="text" class="inputText" required />
+          <input id="time" type="time" class="inputText" required />
         </div>
         <div class="weight_info_section">
           <span class="inputTitle">Peso total da receita</span>
@@ -87,21 +87,21 @@
         <div class="cards_tables">
           <div id="ingredient_table_card_1" class="aliment_box_info">
             <input
-              id="aliment_name"
+              id="aliment_name_1"
               class="inputText_nutrient"
               type="text"
               value="Arroz integral, cozido"
               disabled
             />
             <input
-              id="aliment_weight_text"
+              id="aliment_weight_text_1"
               class="inputText_nutrient"
               type="text"
               value="3 Gramas"
               disabled
             />
             <input
-              id="aliment_weight_number"
+              id="aliment_weight_number_1"
               class="inputText_nutrient"
               type="text"
               value="3g"
@@ -111,21 +111,21 @@
 
           <div id="ingredient_table_card_2" class="aliment_box_info">
             <input
-              id="aliment_name"
+              id="aliment_name_2"
               class="inputText_nutrient"
               type="text"
               value="Arroz integral, cozido"
               disabled
             />
             <input
-              id="aliment_weight_text"
+              id="aliment_weight_text_2"
               class="inputText_nutrient"
               type="text"
               value="3 Gramas"
               disabled
             />
             <input
-              id="aliment_weight_number"
+              id="aliment_weight_number_2"
               class="inputText_nutrient"
               type="text"
               value="3g"
@@ -135,21 +135,21 @@
 
           <div id="ingredient_table_card_3" class="aliment_box_info">
             <input
-              id="aliment_name"
+              id="aliment_name_3"
               class="inputText_nutrient"
               type="text"
               value="Arroz integral, cozido"
               disabled
             />
             <input
-              id="aliment_weight_text"
+              id="aliment_weight_text_3"
               class="inputText_nutrient"
               type="text"
               value="3 Gramas"
               disabled
             />
             <input
-              id="aliment_weight_number"
+              id="aliment_weight_number_3"
               class="inputText_nutrient"
               type="text"
               value="3g"
@@ -159,21 +159,21 @@
 
           <div id="ingredient_table_card_4" class="aliment_box_info">
             <input
-              id="aliment_name"
+              id="aliment_name_4"
               class="inputText_nutrient"
               type="text"
               value="Arroz integral, cozido"
               disabled
             />
             <input
-              id="aliment_weight_text"
+              id="aliment_weight_text_4"
               class="inputText_nutrient"
               type="text"
               value="3 Gramas"
               disabled
             />
             <input
-              id="aliment_weight_number"
+              id="aliment_weight_number_4"
               class="inputText_nutrient"
               type="text"
               value="3g"
@@ -183,21 +183,21 @@
 
           <div id="ingredient_table_card_5" class="aliment_box_info">
             <input
-              id="aliment_name"
+              id="aliment_name_5"
               class="inputText_nutrient"
               type="text"
               value="Arroz integral, cozido"
               disabled
             />
             <input
-              id="aliment_weight_text"
+              id="aliment_weight_text_5"
               class="inputText_nutrient"
               type="text"
               value="3 Gramas"
               disabled
             />
             <input
-              id="aliment_weight_number"
+              id="aliment_weight_number_5"
               class="inputText_nutrient"
               type="text"
               value="3g"
@@ -207,21 +207,21 @@
 
           <div id="ingredient_table_card_6" class="aliment_box_info">
             <input
-              id="aliment_name"
+              id="aliment_name_6"
               class="inputText_nutrient"
               type="text"
               value="Arroz integral, cozido"
               disabled
             />
             <input
-              id="aliment_weight_text"
+              id="aliment_weight_text_6"
               class="inputText_nutrient"
               type="text"
               value="3 Gramas"
               disabled
             />
             <input
-              id="aliment_weight_number"
+              id="aliment_weight_number_6"
               class="inputText_nutrient"
               type="text"
               value="3g"
@@ -252,10 +252,13 @@
     </div>
 
     <div class="prepare_section">
-      <p class="title">Modo de Preparo</p>
+      <div class="title_section">
+        <p class="title">Modo de Preparo</p>
+        <span id="add_new_input" class="material-icons">add</span>
+      </div>
       <div id="test" class="prepare_mode">
         <span id="prepare_mode_number">1</span>
-        <input id="0" type="text" class="inputText_mode" />
+        <input id="prepara_text_input" type="text" class="inputText_mode" />
         <span id="delete_prepare_mode" class="material-icons">delete</span>
       </div>
     </div>

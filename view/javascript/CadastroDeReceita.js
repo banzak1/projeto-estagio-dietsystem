@@ -26,21 +26,20 @@ function auto_height(elem) {  /* javascript */
 /*  Função para criar ou excluir novos modos de preparo */
 
 var counter = 2;
+$(document).on('click', '#add_new_input', function() {
 
-$(document).on('click', '.prepare_mode :input', function() {
-        if($("id:first").val() > 1) {
-                $('<div id="test" class="prepare_mode"><span id="prepare_mode_number">'+counter+'</span> <input id="'+counter+'" type="text" class="inputText_mode" /><span id="delete_prepare_mode" class="material-icons">delete</span></div>').appendTo('.prepare_section');
-                counter++;
-        };
 
+        $('<div id="test" class="prepare_mode"><span id="prepare_mode_number" >'+counter+'</span><input id="prepara_text_input" type="text" class="inputText_mode" /><span id="delete_prepare_mode" class="material-icons">delete</span></div>').appendTo('.prepare_section');
+        counter++;
 });
 
 
-        $(document).on('click', '#delete_prepare_mode', function() {
-                $(this).closest('.prepare_mode').remove();
-                counter--;
-                reset_values();
-        });
+$(document).on('click', '#delete_prepare_mode', function() {
+
+        $(this).closest('.prepare_mode').remove();
+        counter--;
+        reset_values();
+});
 
 
 
