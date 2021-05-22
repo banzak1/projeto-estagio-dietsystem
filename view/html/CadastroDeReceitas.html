@@ -30,7 +30,12 @@
 
         <div class="description_info_section">
           <span class="inputTitle">Descrição</span>
-          <textarea id="descricao" class="auto_height" oninput="auto_height(this)" required ></textarea>
+          <textarea
+            id="descricao"
+            class="auto_height"
+            oninput="auto_height(this)"
+            required
+          ></textarea>
         </div>
         <div class="time_info_section">
           <span class="inputTitle">Tempo de Preparo</span>
@@ -60,8 +65,19 @@
       </div>
 
       <div class="image_file_recipe">
-        <img id="output" class="img_file" src="../images/avatar.svg" alt="avatar" />
-        <input id="envio_img_input" type="file" title="" accept="image/*" onchange="document.getElementById('output').src = window.URL.createObjectURL(this.files[0])"/>
+        <img
+          id="output"
+          class="img_file"
+          src="../images/avatar.svg"
+          alt="avatar"
+        />
+        <input
+          id="envio_img_input"
+          type="file"
+          title=""
+          accept="image/*"
+          onchange="document.getElementById('output').src = window.URL.createObjectURL(this.files[0])"
+        />
       </div>
     </div>
 

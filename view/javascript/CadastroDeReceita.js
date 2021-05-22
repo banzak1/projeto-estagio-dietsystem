@@ -35,13 +35,13 @@ $(document).on('click', '.prepare_mode :input', function() {
 
 });
 
-if (counter.val() > '2') {
+
         $(document).on('click', '#delete_prepare_mode', function() {
                 $(this).closest('.prepare_mode').remove();
                 counter--;
                 reset_values();
         });
-};
+
 
 
 /*  Função para reorganizar os novos modos de preparo deletados */
@@ -79,15 +79,24 @@ $('#numPortion').change(function() {
         $('#number_of_portion_input').val($(this).val());
 });
 
-
-$('.portion_and_measure_card').change(function() {
+$(document).on('change', '#numPortion', function() {
         var weightValue = $('#weight').val();
         var portionValue = $('#number_of_portion_input').val();
         var weightForPortion = weightValue / portionValue;
-
+        
         $('#weight_for_portion_input').val(weightForPortion);
-        $('#numPortion').val(portionValue);
+        $('#numPortion').val(portionValue);      
 });
+
+$(document).on('change', '#number_of_portion_input', function() {
+        var weightValue = $('#weight').val();
+        var portionValue = $('#number_of_portion_input').val();
+        var weightForPortion = weightValue / portionValue;
+        
+        $('#weight_for_portion_input').val(weightForPortion);
+        $('#numPortion').val(portionValue);      
+});
+
 
 $('.portion_and_measure_card').change(function(){
         if($('#number_of_portion_input').val() === '1' ){
