@@ -97,12 +97,6 @@ body {
   padding: 12px 10px 12px 0;
 }
 
-.time:after {
-  right: 0;
-  top: 0;
-  content: '@gmail.com';
-}
-
 #weight_info_section {
   display: flex;
   flex-direction: row;
