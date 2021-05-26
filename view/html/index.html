@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    
+    <script src="../javascript/jquery-3.6.0.min.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap"
       rel="stylesheet"
@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="CadastroDeReceitas.css" />
+    <link rel="stylesheet" href="../css/CadastroDeReceitas.css" />
 
     <title>Recipes</title>
   </head>
@@ -30,16 +30,11 @@
 
         <div class="description_info_section">
           <span class="inputTitle">Descrição</span>
-          <textarea
-            id="descricao"
-            class="auto_height"
-            oninput="auto_height(this)"
-            required
-          ></textarea>
+          <textarea id="descricao" class="auto_height" oninput="auto_height(this)" required ></textarea>
         </div>
         <div class="time_info_section">
           <span class="inputTitle">Tempo de Preparo</span>
-          <input id="time" type="time" class="inputText" required />
+          <input id="time" type="text" class="inputText" required />
         </div>
         <div class="weight_info_section">
           <span class="inputTitle">Peso total da receita</span>
@@ -65,19 +60,8 @@
       </div>
 
       <div class="image_file_recipe">
-        <img
-          id="output"
-          class="img_file"
-          src="avatar.svg"
-          alt="avatar"
-        />
-        <input
-          id="envio_img_input"
-          type="file"
-          title=""
-          accept="image/*"
-          onchange="document.getElementById('output').src = window.URL.createObjectURL(this.files[0])"
-        />
+        <img id="output" class="img_file" src="../images/avatar.svg" alt="avatar" />
+        <input id="envio_img_input" type="file" title="" accept="image/*" onchange="document.getElementById('output').src = window.URL.createObjectURL(this.files[0])"/>
       </div>
     </div>
 
@@ -87,21 +71,21 @@
         <div class="cards_tables">
           <div id="ingredient_table_card_1" class="aliment_box_info">
             <input
-              id="aliment_name_1"
+              id="aliment_name"
               class="inputText_nutrient"
               type="text"
               value="Arroz integral, cozido"
               disabled
             />
             <input
-              id="aliment_weight_text_1"
+              id="aliment_weight_text"
               class="inputText_nutrient"
               type="text"
               value="3 Gramas"
               disabled
             />
             <input
-              id="aliment_weight_number_1"
+              id="aliment_weight_number"
               class="inputText_nutrient"
               type="text"
               value="3g"
@@ -111,21 +95,21 @@
 
           <div id="ingredient_table_card_2" class="aliment_box_info">
             <input
-              id="aliment_name_2"
+              id="aliment_name"
               class="inputText_nutrient"
               type="text"
               value="Arroz integral, cozido"
               disabled
             />
             <input
-              id="aliment_weight_text_2"
+              id="aliment_weight_text"
               class="inputText_nutrient"
               type="text"
               value="3 Gramas"
               disabled
             />
             <input
-              id="aliment_weight_number_2"
+              id="aliment_weight_number"
               class="inputText_nutrient"
               type="text"
               value="3g"
@@ -135,21 +119,21 @@
 
           <div id="ingredient_table_card_3" class="aliment_box_info">
             <input
-              id="aliment_name_3"
+              id="aliment_name"
               class="inputText_nutrient"
               type="text"
               value="Arroz integral, cozido"
               disabled
             />
             <input
-              id="aliment_weight_text_3"
+              id="aliment_weight_text"
               class="inputText_nutrient"
               type="text"
               value="3 Gramas"
               disabled
             />
             <input
-              id="aliment_weight_number_3"
+              id="aliment_weight_number"
               class="inputText_nutrient"
               type="text"
               value="3g"
@@ -159,21 +143,21 @@
 
           <div id="ingredient_table_card_4" class="aliment_box_info">
             <input
-              id="aliment_name_4"
+              id="aliment_name"
               class="inputText_nutrient"
               type="text"
               value="Arroz integral, cozido"
               disabled
             />
             <input
-              id="aliment_weight_text_4"
+              id="aliment_weight_text"
               class="inputText_nutrient"
               type="text"
               value="3 Gramas"
               disabled
             />
             <input
-              id="aliment_weight_number_4"
+              id="aliment_weight_number"
               class="inputText_nutrient"
               type="text"
               value="3g"
@@ -183,21 +167,21 @@
 
           <div id="ingredient_table_card_5" class="aliment_box_info">
             <input
-              id="aliment_name_5"
+              id="aliment_name"
               class="inputText_nutrient"
               type="text"
               value="Arroz integral, cozido"
               disabled
             />
             <input
-              id="aliment_weight_text_5"
+              id="aliment_weight_text"
               class="inputText_nutrient"
               type="text"
               value="3 Gramas"
               disabled
             />
             <input
-              id="aliment_weight_number_5"
+              id="aliment_weight_number"
               class="inputText_nutrient"
               type="text"
               value="3g"
@@ -207,21 +191,21 @@
 
           <div id="ingredient_table_card_6" class="aliment_box_info">
             <input
-              id="aliment_name_6"
+              id="aliment_name"
               class="inputText_nutrient"
               type="text"
               value="Arroz integral, cozido"
               disabled
             />
             <input
-              id="aliment_weight_text_6"
+              id="aliment_weight_text"
               class="inputText_nutrient"
               type="text"
               value="3 Gramas"
               disabled
             />
             <input
-              id="aliment_weight_number_6"
+              id="aliment_weight_number"
               class="inputText_nutrient"
               type="text"
               value="3g"
@@ -246,19 +230,16 @@
         </div>
         <div class="edit-form">
           <span id="edit-change" class="material-icons">edit</span>
-          <img src="carrot.svg" id="edit-confirm" alt="save" />
+          <img src="../images/carrot.svg" id="edit-confirm" alt="save" />
         </div>
       </div>
     </div>
 
     <div class="prepare_section">
-      <div class="title_section">
-        <p class="title">Modo de Preparo</p>
-        <span id="add_new_input" class="material-icons">add</span>
-      </div>
+      <p class="title">Modo de Preparo</p>
       <div id="test" class="prepare_mode">
         <span id="prepare_mode_number">1</span>
-        <input id="prepara_text_input" type="text" class="inputText_mode" />
+        <input id="0" type="text" class="inputText_mode" />
         <span id="delete_prepare_mode" class="material-icons">delete</span>
       </div>
     </div>
@@ -407,7 +388,6 @@
         />
       </div>
     </div>
-    <script src="../javascript/jquery-3.6.0.min.js"></script>
     <script src="../javascript/CadastroDeReceita.js"></script>
   </body>
 </html>
